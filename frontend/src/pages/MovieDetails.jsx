@@ -77,8 +77,7 @@ const MovieDetails = () => {
         <div className="detailsGrid">
 
           {/* POSTER */}
-          <div>
-            <div className="detailsPoster">
+            <div className="detailsPoster" style={{ "--poster": `url(${movie.posterUrl || "https://via.placeholder.com/300x450?text=No+Image"})` }}>
               <img
                 src={movie.posterUrl || "https://via.placeholder.com/300x450?text=No+Image"}
                 alt={movie.title || "Movie"}
@@ -88,11 +87,11 @@ const MovieDetails = () => {
                 }}
               />
             </div>
-          </div>
+
 
           {/* INFO */}
           <div>
-            <h1 style={{ margin: 0 }}>{movie.title || "No Title"}</h1>
+            <h1 className="h1">{movie.title || "No Title"}</h1>
 
             <p className="p" style={{ marginTop: 10 }}>
               {movie.description || "No Description"}
@@ -118,22 +117,21 @@ const MovieDetails = () => {
               </span>
             </div>
 
-            {/* TRAILER */}
-            {trailerSrc && (
-              <div className="detailsPoster detailsTrailer">
-                <div className="trailerWrap">
-                  <iframe
-                    src={trailerSrc}
-                    title={movie.title || "Movie"}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-              </div>
-            )}
           </div>
-
+          {/* TRAILER */}
+          {trailerSrc && (
+            <div className="detailsTrailer">
+              <div className="trailerWrap">
+                <iframe
+                  src={trailerSrc}
+                  title={movie.title || "Movie"}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
 

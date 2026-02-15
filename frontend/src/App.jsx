@@ -53,7 +53,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <div className="container">MovieHub • UI refresh</div>
+        <div className="container">MovieHub</div>
       </footer>
     </div>
   );

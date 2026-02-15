@@ -70,9 +70,8 @@
 }
 
 /* ====== MOBILE ====== */
-@media (max-width: 720px){
+@media (max-width: 630px){
   .brand{ min-width: 0; }
-  .brandSub{ display:none; } /* чтобы не занимало место */
 
   .navRight{ flex-wrap: nowrap; }
 

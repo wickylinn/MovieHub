@@ -79,10 +79,12 @@ button, input, textarea{ font: inherit; }
   border: 1px solid var(--stroke);
   border-radius: var(--radius);
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 0;
 }
 
 .h1{
-  font-size: clamp(28px, 3.2vw, 44px);
+  font-size: clamp(15px, 5vw, 35px);
   line-height: 1.05;
   letter-spacing: -0.03em;
   margin: 0;
@@ -91,6 +93,7 @@ button, input, textarea{ font: inherit; }
 .p{
   margin: 10px 0 0;
   color: var(--muted);
+  font-size: clamp(10px, 2.85vw, 15px);
 }
 
 .btn{
@@ -121,15 +124,16 @@ button, input, textarea{ font: inherit; }
 .btnDanger{ background: rgba(239,68,68,.16); border-color: rgba(239,68,68,.35); }
 
 .badge{
+  font-size: clamp(5px, 2.6vw, 15px);
+  white-space: nowrap;
   display:inline-flex;
   align-items:center;
   gap:8px;
-  padding: 7px 10px;
-  border-radius: 999px;
+  padding: clamp(1.5px, 1vw, 7px) clamp(3px, 1vw, 10px);
+  border-radius: 30px;
   background: rgba(255,255,255,.07);
   border:1px solid rgba(255,255,255,.12);
   color: rgba(232,238,255,.85);
-  font-size: 12px;
 }
 
 .input{
@@ -158,13 +162,6 @@ button, input, textarea{ font: inherit; }
 .grid{
   display:grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 16px;
-}
-
-/* MovieDetails responsive grid (используй в JSX className="detailsGrid") */
-.detailsGrid{
-  display: grid;
-  grid-template-columns: 320px 1fr;
   gap: 16px;
 }
 
@@ -204,11 +201,6 @@ button, input, textarea{ font: inherit; }
   .movieTitle{
     font-size: 14px;
     line-height: 1.2;
-  }
-
-  .badge{
-    font-size: 11px;
-    padding: 5px 8px;
   }
 
   .ratingPill{

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import API from "../services/api";
 
 const Profile = () => {
@@ -20,8 +21,8 @@ const Profile = () => {
         <h2 style={{ margin: 0 }}>Please login</h2>
         <p className="p">You need an account to view your profile.</p>
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 10 }}>
-          <a className="btn btnPrimary" href="/login">Login</a>
-          <a className="btn" href="/register">Register</a>
+          <Link className="btn btnPrimary" to="/login">Login</Link>
+          <Link className="btn" to="/register">Register</Link>
         </div>
       </div>
     );
