@@ -1,0 +1,15 @@
+# logs
+*.log
+
+# env
+.env
+.env.*
+
+# node
+**/node_modules/
+**/dist/
+**/build/
+
+# misc
+.DS_Store
+.vscode/
