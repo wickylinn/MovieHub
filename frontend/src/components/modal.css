@@ -23,4 +23,4 @@
 .modalSub{ margin-top: 6px; color: rgba(232,238,255,.6); font-size: 13px; }
 
 .modalForm{ margin-top: 14px; display:flex; flex-direction: column; gap: 12px; }
-.label{ display:flex; flex-direction: column; gap: 8px; color: rgba(232,238,255,.8); font-size: 13px; }
+.label{ display:flex; flex-direction: column; gap: 8px; color: rgba(232,238,255,.8); font-size: clamp(13px, 2vw, 18px); }

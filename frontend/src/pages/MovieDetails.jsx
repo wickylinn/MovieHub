@@ -73,9 +73,8 @@ const MovieDetails = () => {
 
   return (
     <div style={{ display: "grid", gap: 14 }}>
-      <div className="movieDetails" style={{ padding: 16, borderRadius: 22 }}>
+      <div className="movieDetails">
         <div className="detailsGrid">
-
           {/* POSTER */}
             <div className="detailsPoster" style={{ "--poster": `url(${movie.posterUrl || "https://via.placeholder.com/300x450?text=No+Image"})` }}>
               <img
@@ -97,7 +96,7 @@ const MovieDetails = () => {
               {movie.description || "No Description"}
             </p>
 
-            <div style={{ marginTop: 12, display: "flex", gap: 10, flexWrap: "wrap" }}>
+            <div style={{ marginTop: 12, display: "flex", gap: 5, flexWrap: "wrap" }}>
               {genres.length ? (
                 genres.map((g) => (
                   <span className="badge" key={g}>🎭 {g}</span>

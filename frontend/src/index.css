@@ -10,7 +10,7 @@
   --accent2:#2dd4bf;
   --danger:#ef4444;
   --shadow: 0 18px 60px rgba(0,0,0,.45);
-  --radius: 18px;
+  --radius: 22px;
   --radius2: 26px;
   --maxw: 1180px;
   --blur: 20px;
@@ -84,7 +84,7 @@ button, input, textarea{ font: inherit; }
 }
 
 .h1{
-  font-size: clamp(15px, 5vw, 35px);
+  font-size: clamp(16px, 5vw, 35px);
   line-height: 1.05;
   letter-spacing: -0.03em;
   margin: 0;
@@ -93,7 +93,7 @@ button, input, textarea{ font: inherit; }
 .p{
   margin: 10px 0 0;
   color: var(--muted);
-  font-size: clamp(10px, 2.85vw, 15px);
+  font-size: clamp(10px, 2.85vw, 20px);
 }
 
 .btn{
@@ -175,9 +175,8 @@ button, input, textarea{ font: inherit; }
   body{ background-attachment: scroll; background-repeat: no-repeat;}
 }
 
-/* MovieDetails column on small screens */
-@media (max-width: 760px){
-  .detailsGrid{ grid-template-columns: 1fr; }
+@media (max-width: 790px){
+  .movieDetails{ padding: clamp(8px, 3vw, 20px); }
 }
 
 /* phones */
