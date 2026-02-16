@@ -8,7 +8,7 @@ The project was built as a full-stack web application using React and Node.js wi
 
 ## 🌐 Live Demo
 
-👉 https://moviehubfront.onrender.com/
+👉 https://moviehub-v1yo.onrender.com/
 
 ---
 
